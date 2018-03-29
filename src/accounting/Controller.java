@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -30,7 +31,13 @@ public class Controller implements Initializable {
     public void login (ActionEvent event) throws IOException{
         try {
             if (loginModel.isLogin(username.getText(), password.getText())){
-                    showOrigin();
+                Parent blah = FXMLLoader.load(getClass().getResource("final.fxml"));
+                Scene scene = new Scene(blah);
+                Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                appStage.setScene(scene);
+                appStage.setResizable(false);
+                appStage.centerOnScreen();
+                appStage.show();
             } else {
                 signInBtn.setText("try again");
             }

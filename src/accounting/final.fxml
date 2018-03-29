@@ -62,7 +62,7 @@
       <items>
         <AnchorPane>
           <children>
-            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Master" textAlignment="CENTER" wrapText="false">
+            <Label alignment="CENTER" layoutX="139.0" layoutY="20.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="جزئیات" textAlignment="CENTER" wrapText="false">
               <font>
                 <Font size="18.0" fx:id="x1" />
               </font>
@@ -89,7 +89,27 @@
         </ScrollPane>
         <AnchorPane>
           <children>
-            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                  <VBox layoutX="-4.0" layoutY="-3.0" prefHeight="245.0" prefWidth="227.0">
+                     <children>
+                  <Label alignment="CENTER" font="$x1" prefHeight="53.0" prefWidth="230.0" style="&#10;" text="لیست کتاب‌ها" textAlignment="CENTER" textFill="$x2" wrapText="false" />
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="230.0" style="&#10;" text="ورود اطلاعات جدید" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" fx:id="x11" />
+                           </font>
+                           <textFill>
+                              <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
+                           </textFill>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="230.0" style="&#10;" text="گزارش" textAlignment="CENTER" wrapText="false">
+                           <font>
+                              <Font size="18.0" fx:id="x111" />
+                           </font>
+                           <textFill>
+                              <Color blue="0.624" green="0.624" red="0.624" fx:id="x211" />
+                           </textFill>
+                        </Label>
+                     </children>
+                  </VBox>
           </children>
         </AnchorPane>
       </items>
