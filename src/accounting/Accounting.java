@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class Accounting extends Application {
 
-    public static void accounting(String[] args) {
+    public static void main (String[] args) {
         launch(args);
     }
 
