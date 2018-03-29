@@ -7,14 +7,14 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accounting.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accounting.Controller">
    <children>
       <Button fx:id="signInBtn" layoutX="117.0" layoutY="172.0" mnemonicParsing="false" onAction="#login" text="ورود" />
-      <TextField id="username" fx:id="username" layoutX="60.0" layoutY="35.0" promptText="نام کاربری" style="-fx-border-radius: 5px; -fx-alignment: center; -fx-font-family: &quot;B Nazanin&quot;; -fx-scale-z: 10px;" styleClass="textfirst" />
       <Label layoutX="35.0" layoutY="110.0" text="لطفا نام کاربری و رمز عبور را وارد نمایید" />
       <Label layoutX="64.0" layoutY="130.0" text="برای تست:از نام کاربری test" />
       <Label layoutX="56.0" layoutY="151.0" text="و رمز عبور test استفاده نمایید" />
-      <PasswordField fx:id="password" layoutX="62.0" layoutY="72.0" promptText="رمز عبور" style="-fx-border-radius: 5px; -fx-alignment: center; -fx-font-family: &quot;B Nazanin&quot;; -fx-scale-z: 10px;" />
+      <TextField fx:id="username" layoutX="61.0" layoutY="42.0" promptText="نام کاربری" />
+      <PasswordField fx:id="password" layoutX="61.0" layoutY="76.0" promptText="رمز عبور" />
    </children>
    <effect>
       <Glow />
