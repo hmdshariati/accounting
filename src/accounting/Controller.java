@@ -29,8 +29,6 @@ public class Controller implements Initializable {
     }
     
     public void login (ActionEvent event) throws IOException{
-        try {
-            if (loginModel.isLogin(username.getText(), password.getText())){
                 Parent blah = FXMLLoader.load(getClass().getResource("final.fxml"));
                 Scene scene = new Scene(blah);
                 Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -38,6 +36,9 @@ public class Controller implements Initializable {
                 appStage.setResizable(false);
                 appStage.centerOnScreen();
                 appStage.show();
+        try {
+            if (loginModel.isLogin(username.getText(), password.getText())){
+
             } else {
                 signInBtn.setText("try again");
             }
