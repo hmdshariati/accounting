@@ -16,7 +16,7 @@ import org.h2.jdbcx.JdbcDataSource;
  *
  * @author hamid
  */
-public class SqliteConn {
+public class Conn {
 /*    public static Connection DbConnector(){
         try{
             Connection conn = null;
@@ -39,7 +39,7 @@ public class SqliteConn {
             ds.setPassword("test");
             conn = ds.getConnection();
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteConn.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Conn.class.getName()).log(Level.SEVERE, null, ex);
         }
         return conn;
     }

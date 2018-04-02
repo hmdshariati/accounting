@@ -11,7 +11,7 @@ public class Accounting extends Application {
 
     public static void main (String[] args) {
         launch(args);
-        //InitialData.main(args);
+        InitialData.main(args);
     }
 
     @Override

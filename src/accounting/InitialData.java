@@ -26,7 +26,7 @@ public class InitialData {
     }
     
     public void createTables(){
-        Connection conn = SqliteConn.getH2Connection();
+        Connection conn = Conn.getH2Connection();
         try {
             //String query = "DROP TABLE IF EXISTS " + PEOPLE_TABLE;
             //conn.createStatement().execute(query);

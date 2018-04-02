@@ -18,7 +18,7 @@ public class LoginModel {
     Connection connection;
     public LoginModel(){
 //        connection =  SqliteConn.DbConnector();
-        connection =  SqliteConn.getH2Connection();
+        connection =  Conn.getH2Connection();
         if (connection != null){
             System.out.println("success");
         }else{
