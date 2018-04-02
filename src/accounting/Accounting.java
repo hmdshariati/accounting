@@ -11,6 +11,7 @@ public class Accounting extends Application {
 
     public static void main (String[] args) {
         launch(args);
+        //InitialData.main(args);
     }
 
     @Override
@@ -19,6 +20,7 @@ public class Accounting extends Application {
         primaryStage.setTitle("صفحه ورود");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+        
 
         
     }

@@ -29,17 +29,18 @@ public class Controller implements Initializable {
     }
     
     public void login (ActionEvent event) throws IOException{
-                Parent blah = FXMLLoader.load(getClass().getResource("final.fxml"));
+            try {
+            if (loginModel.isLogin(username.getText(), password.getText())){
+    Parent blah = FXMLLoader.load(getClass().getResource("final.fxml"));
                 Scene scene = new Scene(blah);
                 Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 appStage.setScene(scene);
                 appStage.setResizable(false);
                 appStage.centerOnScreen();
                 appStage.show();
-        try {
-            if (loginModel.isLogin(username.getText(), password.getText())){
-
+        
             } else {
+                
                 signInBtn.setText("try again");
             }
         } catch (SQLException e) {

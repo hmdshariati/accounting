@@ -1,0 +1,30 @@
+2018-04-02 09:13:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:14:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:15:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:17:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]
+2018-04-02 09:19:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PEOPLE" not found; SQL statement:
+select * from People where username = ? and password = ?  [42102-196]

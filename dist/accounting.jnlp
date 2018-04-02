@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="accounting.jnlp">
+  <information>
+    <title>accounting</title>
+    <vendor>hamid</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="accounting.jar" size="20635" download="eager" />
+    <jar href="lib/h2-1.4.196.jar" size="1821940" download="eager" />
+    <jar href="lib/sqlite-jdbc-3.21.0.jar" size="6672489" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="accounting" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="accounting.Accounting"  name="accounting" />
+  <update check="always"/>
+</jnlp>

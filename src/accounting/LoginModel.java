@@ -17,7 +17,8 @@ import java.sql.*;
 public class LoginModel {
     Connection connection;
     public LoginModel(){
-        connection =  SqliteConn.DbConnector();
+//        connection =  SqliteConn.DbConnector();
+        connection =  SqliteConn.getH2Connection();
         if (connection != null){
             System.out.println("success");
         }else{
@@ -29,6 +30,7 @@ public class LoginModel {
         ResultSet resultSet = null;
         String query = "select * from People where username = ? and password = ? ";
         try {
+            System.out.println(resultSet);
             selectUser = connection.prepareStatement(query);
             selectUser.setString(1, username);
             selectUser.setString(2, password);
@@ -37,6 +39,7 @@ public class LoginModel {
             if (resultSet.next()) {
                 return true;
             } else {
+                System.out.println(resultSet);  
                 return false;
             }
         } catch (SQLException e){
