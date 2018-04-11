@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.NodeOrientation;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,7 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class Controller implements Initializable {
+public class SigninController implements Initializable {
     public LoginModel loginModel = new LoginModel();
     @FXML
     private TextField username;
@@ -31,12 +32,16 @@ public class Controller implements Initializable {
     public void login (ActionEvent event) throws IOException{
             try {
             if (loginModel.isLogin(username.getText(), password.getText())){
-    Parent blah = FXMLLoader.load(getClass().getResource("final.fxml"));
+                
+                Parent blah;
+                blah = FXMLLoader.load(getClass().getResource("Main.fxml"));
                 Scene scene = new Scene(blah);
+                scene.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
                 Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 appStage.setScene(scene);
                 appStage.setResizable(false);
                 appStage.centerOnScreen();
+                appStage.setTitle("حسابداری و انبارداری مک گرو هیل");
                 appStage.show();
         
             } else {

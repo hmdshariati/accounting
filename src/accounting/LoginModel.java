@@ -5,6 +5,7 @@
  */
 package accounting;
 
+import accounting.Conn;
 import java.sql.*;
 
 

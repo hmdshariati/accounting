@@ -10,8 +10,9 @@ import javafx.stage.Stage;
 public class Accounting extends Application {
 
     public static void main (String[] args) {
+        InitialData.main(args); 
         launch(args);
-        InitialData.main(args);
+            
     }
 
     @Override

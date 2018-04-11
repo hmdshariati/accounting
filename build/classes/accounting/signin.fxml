@@ -7,7 +7,7 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accounting.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accounting.SigninController">
    <children>
       <Button fx:id="signInBtn" layoutX="117.0" layoutY="172.0" mnemonicParsing="false" onAction="#login" text="ورود" />
       <Label layoutX="35.0" layoutY="110.0" text="لطفا نام کاربری و رمز عبور را وارد نمایید" />
